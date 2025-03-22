@@ -46,14 +46,25 @@ header {
   padding: 2.5em 2.5em 3em 1em;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   background-color: white;
 }
 
 .about_me {
   font-size: 2.5rem;
-  padding-bottom: 0.8em;
 }
 
 .about_text {
   font-size: 1.5rem;
+}
+
+.author_links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.author_links svg {
+  height: 2rem;
 }
