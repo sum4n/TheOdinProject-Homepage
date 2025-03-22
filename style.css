@@ -4,7 +4,7 @@
 }
 
 header {
-  border: 2px solid red;
+  background-color: #0790b2;
   display: flex;
   justify-content: center;
   align-items: center;
