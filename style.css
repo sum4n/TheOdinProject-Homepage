@@ -1,57 +1,54 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 header {
   background-color: #0790b2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
   padding: 4em;
 }
 
 .author_image_content {
-  /* border: 2px solid green; */
-  max-width: 750px;
-  max-height: 750px;
-  /* width: 50%; */
-  text-align: center;
-  /* To keep the image vertiacally centered */
-  display: flex;
-  justify-content: center;
-  /* To keep the shadow above about_me_content */
+  grid-column: 1;
+  grid-row: 1;
   z-index: 1;
-  /* For image caption */
-  position: relative;
 }
 
 .author_image {
   width: 100%;
   height: 100%;
   box-shadow: 0px 0px 4px black;
+  object-fit: cover;
 }
 
 .author_image_name {
   color: white;
-  font-size: 3rem;
-  position: absolute;
-  bottom: 0.2em;
+  font-size: 4rem;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 2;
+  align-self: self-end;
+  justify-self: center;
+  text-align: center;
 }
 
 .about_me_content {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.337);
-  width: 50%;
   min-height: 400px;
   padding: 2.5em 2.5em 3em 1em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   background-color: white;
+
+  align-self: center;
 }
 
 .about_me {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 .about_text {
@@ -59,12 +56,12 @@ header {
 }
 
 .author_links {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 1.5rem;
+  margin-top: 2em;
+  margin-right: 1em;
+  align-self: flex-end;
 }
 
 .author_links svg {
   height: 2rem;
+  margin: 0 1.5rem 0 1rem;
 }
