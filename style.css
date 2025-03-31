@@ -180,6 +180,16 @@ footer {
   stroke: white;
 }
 
+.contact-me-links {
+  margin-top: 2em;
+  display: flex;
+  gap: 1em;
+}
+
+.contact-me-links svg {
+  height: 60px;
+}
+
 .contact-image {
   /* border: 1px solid blue; */
   flex: 1.4;
