@@ -132,7 +132,7 @@ header {
 
 /* Footer */
 footer {
-  border: 1px solid darkgoldenrod;
+  /* border: 1px solid darkgoldenrod; */
   background-color: #0790b2;
   margin-top: 4em;
   padding: 4em;
@@ -142,7 +142,7 @@ footer {
 }
 
 .contact-div {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   flex: 1;
   min-width: 500px;
   color: white;
@@ -165,12 +165,23 @@ footer {
   margin-bottom: 1em;
 }
 
+.contact-div :nth-child(5),
+.contact-div :nth-child(6) {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .contact-div p svg {
-  width: 32px;
+  height: 48px;
+}
+
+.contact-div p svg path {
+  stroke: white;
 }
 
 .contact-image {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   flex: 1.4;
 }
 
