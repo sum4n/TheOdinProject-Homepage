@@ -45,6 +45,7 @@ header {
   background-color: white;
   padding-right: 48px;
   padding-left: 24px;
+  max-width: 900px;
 }
 
 .about_me {
@@ -54,12 +55,6 @@ header {
 
   font-size: 3.5rem;
   box-shadow: 2px -2px 8px 1px rgba(0, 0, 0, 0.2);
-}
-
-.about_me,
-.about_text,
-.author_links {
-  max-width: 900px;
 }
 
 .about_text {
@@ -202,9 +197,6 @@ footer {
 
 .contact-me-links {
   margin-top: 2em;
-  /* display: flex; */
-  /* align-items: center; */
-  /* gap: 1em; */
 }
 
 .contact-me-links svg {
@@ -213,7 +205,6 @@ footer {
 }
 
 .contact-image {
-  /* border: 1px solid blue; */
   flex: 1.4;
 }
 
