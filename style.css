@@ -6,7 +6,7 @@
 
 header {
   background: linear-gradient(
-    166deg,
+    170deg,
     #0790b2 68%,
     rgba(0, 0, 0, 0.15) 68%,
     white 68.8%
@@ -251,6 +251,7 @@ footer {
     background-color: white;
     padding: 2em 0 0.5em 0;
     margin: 2em 48px 0 48px;
+    max-width: none;
   }
 
   .about_text {
