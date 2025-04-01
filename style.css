@@ -13,16 +13,14 @@ header {
   );
   display: grid;
   grid-template-columns: 1fr 1.3fr;
+  grid-template-rows: 60px 60px repeat(4, 120px) 60px;
   padding: 4em;
 }
 
-.author_image_content {
-  grid-column: 1;
-  grid-row: 1;
-  z-index: 1;
-}
-
 .author_image {
+  grid-column: 1;
+  grid-row: 1 / -1;
+
   width: 100%;
   height: 100%;
   box-shadow: 0px 0px 4px black;
@@ -30,49 +28,57 @@ header {
 }
 
 .author_image_name {
+  grid-column: 1;
+  grid-row: -2;
+  z-index: 2;
+
   color: white;
   font-size: 4rem;
-  grid-column: 1;
-  grid-row: 1;
-  z-index: 2;
   align-self: self-end;
   justify-self: center;
   text-align: center;
 }
 
-.about_me_content {
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.337);
-  min-height: 70%;
-  padding: 2.5em 2.5em 3em 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.about_me,
+.about_text,
+.author_links {
   background-color: white;
-
-  align-self: center;
+  padding-right: 48px;
+  padding-left: 24px;
 }
 
 .about_me {
+  grid-column: 2;
+  grid-row: 2 / 4;
+  padding-top: 4rem;
+
   font-size: 3.5rem;
   box-shadow: 2px -2px 8px 1px rgba(0, 0, 0, 0.2);
 }
 
+.about_me,
 .about_text,
 .author_links {
   max-width: 900px;
 }
 
 .about_text {
+  grid-column: 2;
+  grid-row: 4 / 6;
+  box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.2);
+
   font-size: 1.5rem;
   max-width: 900px;
 }
 
 .author_links {
-  margin-top: 2em;
-  margin-right: 1em;
+  grid-column: 2;
+  grid-row: 6;
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
 
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   gap: 48px;
 }
 
