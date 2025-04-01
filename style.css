@@ -427,4 +427,29 @@ footer {
   .section-container {
     grid-template-columns: 1fr;
   }
+
+  /* Footer */
+  footer {
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .contact-div {
+    min-width: 0;
+  }
+
+  .contact-div :first-child {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  .contact-me-links {
+    margin: 0;
+    text-align: center;
+  }
+
+  .contact-image img {
+    min-width: 0;
+  }
 }
