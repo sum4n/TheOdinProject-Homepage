@@ -293,7 +293,7 @@ footer {
 }
 
 /* 800px - 600px */
-@media (max-width: 800px) {
+@media (max-width: 800px) and (min-width: 600px) {
   /* Header */
   header {
     padding-left: 1em;
@@ -375,6 +375,9 @@ footer {
       rgba(0, 0, 0, 0.15) 30%,
       white 30.8%
     );
+
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   .author_image {
@@ -384,21 +387,21 @@ footer {
   .author_image_name {
     align-self: center;
     position: relative;
-    bottom: 120px;
+    bottom: 180px;
   }
 
   .about_me,
   .about_text,
   .author_links {
     box-shadow: none;
+    padding-left: 8px;
+    padding-right: 8px;
     /* border: 1px solid red; */
   }
 
   .about_me {
     text-align: center;
-    /* position: relative; */
-    /* bottom: 50px; */
-    font-size: 3.5rem;
+    padding-top: 0;
   }
 
   .about_text {
@@ -413,5 +416,15 @@ footer {
 
   .author_links a svg {
     height: 48px;
+  }
+
+  /* Main */
+  .main-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section-container {
+    grid-template-columns: 1fr;
   }
 }
